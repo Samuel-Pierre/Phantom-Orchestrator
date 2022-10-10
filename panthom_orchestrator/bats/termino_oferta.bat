@@ -1,0 +1,1 @@
+"D:\Users\pedroec\AppData\Local\Programs\UiPath\Studio\uirobot.exe" -file "C:\SVNRobo\desenvolvimento\tahto\proativo\credito\futuro\teste_python\bats\uipath_processos_testes\termino_oferta\Main.xaml"

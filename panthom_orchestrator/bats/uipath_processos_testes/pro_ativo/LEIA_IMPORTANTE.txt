@@ -1,0 +1,29 @@
+COPIAR O PROJETO MODELO PARA SEU CAMINHO DO PROJETO E FAZER AS DEVIDAS ALTERAÇÕES 
+=====================================================================================================
+01_ANTES DE ABRIR O MAIN.XAML,
+   FAZER ALTERAÇÕES NO ARQUIVO MENCIONADO ABAIXO:
+
+==> arquivo.json
+
+NAME: ALTERAR  O NOME PARA O NOME DO SEU PROJETO
+DESCRIPTION : ALTERAR  A DESCRIÇÃO PARA O SEU PROJETO
+=====================================================================================================
+02_ALTERAR O CONTEUDO DO ARQUIVO CONFIG.XLSX.
+
+==> config.xlsx (alterar os dados internos da planilha para informação do seu projeto)
+=====================================================================================================
+02_QUANDO SUBIR PROJETO PARA O ORCHESTRATOR E 
+   FOR SOMENTE DEMOSTRACAO/DESENVOLVIMENTO/HOMOLOGAÇÃO PARA CLIENTE
+
+==> realizar esse processo no uipath
+
+PUBLISH
+MARCAR (IS PRERELEASE)
+
+PACKAGE NAME: COLOCAR NA FRENTE DO NOME DO PROJETO : HOMOLOGACAO_xxxxx_xxxxxx_xxxxxxx
+dessa forma poderemos excluir os dados do banco de dashboard para nao ser contabilizado. 
+
+FAZER SUAS ANOTACOES E PUBLICAR. 
+=====================================================================================================
+03_QUANDO SUBIR PROJETO PARA O ORCHESTRATOR E 
+   FOR PRODUCAO ==NAO MARCAR=== A OPÇÃO ACIMA, ATENTAR AS VARIAVEIS DE TESTE DENTRO DO PROJETO, PARA ALTERAR CONFORME FEITO INSTRUÇÃO DENTRO DENTRO DO CODIGO E PUBLICAR

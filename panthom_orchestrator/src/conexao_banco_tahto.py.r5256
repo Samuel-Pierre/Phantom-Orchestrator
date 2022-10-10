@@ -1,0 +1,30 @@
+import cx_Oracle as cx
+
+# def conexao():
+    
+#     erroBD = True
+#     dsn1 = cx.makedsn('172.31.3.251','1533','VAS11ANL')
+
+#     try:
+#         con = cx.connect(user=r'AMBDEV', password='AMB1TE_yT', dsn = dsn1)
+#         print(con.version)
+#     except:
+#         erroBD = False
+#         return erroBD
+
+
+def select():
+    dsn1 = cx.makedsn('172.31.3.251','1533','VAS11ANL')
+    try:
+        con = cx.connect(user=r'AMBDEV', password='AMB1TE_yT', dsn = dsn1)
+
+        print('Conexão efetuada com sucesso')
+        crsr = con.cursor()
+        select_in_banco = crsr.execute("SELECT id_protocolo,nm_sistema FROM rpa_protocolo WHERE rpa_status_id = 1 ORDER BY DT_ABERTURA")
+        for i in select_in_banco:
+            id_protocolo = str(i[0])
+            nm_sistema = str(i[1]) 
+            break
+        return id_protocolo, nm_sistema
+    except:
+        print("Erro na conexão")
